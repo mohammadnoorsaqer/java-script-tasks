@@ -87,8 +87,36 @@ return word.split(' ').length
 }
 console.log(countWords('hello from CodingAcademy!'))
 //11.Create function to Multiply all elements in an array by it's length 
-function MultiplyByLength(arr30)
-{
-   arr30.filter((multible)=>{multible* arr30.length })
+function MultiplyByLength() {
+    let arr = [4, 2, 5];
+    let multiplied = arr.map((element) => {
+        return element * arr.length;
+    })
+    return multiplied; 
 }
-console.log(MultiplyByLength([4,2,5]))
+
+console.log(MultiplyByLength()); 
+//12. Create a function that will check if str1 ends with the characters in str2 
+function checkEnding(str1,str2)
+{
+   return str1.endsWith(str2)
+}
+console.log(checkEnding("CodingSchool", "OO"))
+//13. Create a function that will repeat each string character two times 
+function doubleChar(str) {
+    return str.split('').map(char => char.repeat(2)).join('');
+}
+
+console.log(doubleChar('Coding'));
+//15.Create function to Return the absolute sum of all the array elements 
+function sum(arr) {
+    return arr.reduce((prev, next) => Math.abs(prev) + Math.abs(next), 0);
+}
+
+console.log(sum([-1, -3, -5, -4, -10, 0])); 
+//14. Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for. 
+function findIndex(arr, element) {
+    return arr.indexOf(element);
+}
+
+console.log(findIndex(['Ali', 'Mazen', 'Ayham', 'Murad'], 'Mazen')); 
