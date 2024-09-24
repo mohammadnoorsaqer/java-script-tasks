@@ -116,7 +116,7 @@ function sum(arr) {
 console.log(sum([-1, -3, -5, -4, -10, 0])); 
 //14. Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for. 
 function findIndex(arr, element) {
-    return arr.indexOf(element);
+    return arr.indexOf(element)+ 1;
 }
 
-console.log(findIndex(['Ali', 'Mazen', 'Ayham', 'Murad'], 'Mazen')); 
+console.log(findIndex(['Ali', 'Mazen', 'Ayham', 'Murad'], 'Ali')); 
